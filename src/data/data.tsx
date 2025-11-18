@@ -19,11 +19,6 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -139,141 +134,99 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Backend & Build Tools',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      { name: 'PHP', level: 9 },
+      { name: 'Advanced Custom Fields (ACF)', level: 10 },
+      { name: 'Node.js / NPM / Yarn', level: 8 },
+      { name: 'Gulp', level: 8 },
+      { name: 'MVC Architecture', level: 8 },
+      { name: 'Git', level: 8 },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'SEO & Analytics',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      { name: 'SEO (Technical & On-Page)', level: 9 },
+      { name: 'Google Tag Manager (GTM)', level: 9 },
+      { name: 'Google Analytics 4 (GA4)', level: 9 },
+      { name: 'Ahrefs / SEMrush', level: 8 },
+      { name: 'Data Layer / Event Tracking', level: 9 },
+      { name: 'Lucky Orange / Heatmaps', level: 8 },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Frontend Development',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      { name: 'WordPress (Custom themes & plugins)', level: 10 },
+      { name: 'HTML5 / CSS3 / SCSS', level: 10 },
+      { name: 'JavaScript (ES6+)', level: 9 },
+      { name: 'React.js', level: 7 },
+      { name: 'Vue.js', level: 6 },
+      { name: 'Bootstrap', level: 9 },
+      { name: 'jQuery', level: 9 },
+      { name: 'Responsive / UX Design', level: 9 },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Spoken Languages',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      { name: 'English', level: 10 },
+      { name: 'Spanish', level: 8 },
+    ],
+  },
+  {
+    name: 'Other Development Skills',
+    skills: [
+      { name: 'CRMs / Webhooks / API Integrations', level: 8 },
+      { name: 'Cloud Servers (Rackspace)', level: 6 },
+      { name: 'Network & IT Troubleshooting', level: 6 },
     ],
   },
 ];
+
 
 /**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'The Advocates Website National Website',
+    description: 'A fully custom WordPress website built from scratch. I developed the front-end and back-end, turning designs into a fast, responsive, and SEO-optimized national homepage for the law firm.',
+    url: 'https://www.theadvocates.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'The Advocates Utah Website',
+    description: 'This site uses the same core template as the national site, but with many custom components and dynamic features. Each page type uses unique code, which allowed me to experiment with new technologies and improve performance and flexibility.',
+    url: 'https://www.utahadvocates.com',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Example of the backend of the Website',
+    description: 'A look at the custom backend I built for our content team. I created clean, organized ACF fields and a simple UI that made it easy for non-technical writers to update pages without needing a developer.',
+    url: '#',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Express Records',
+    description: 'A custom WordPress website built for a company that manages medical records and bills. I developed the layout, handled all integrations, and optimized the site for speed and user experience.',
+    url: 'https://www.expressrr.com',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: ' Location Page',
+    description: 'A content-heavy location page designed for strong SEO performance. I built the layout to handle large amounts of text and media while staying fully responsive and easy for the content team to update.',
+    url: 'https://www.theadvocates.com/wyoming/gillette-personal-injury-lawyer/',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Vue.js Attorney Page',
+    description: 'A hybrid Vue.js and WordPress page that pulls attorney data through the WP JSON API. This project let me experiment with Vue inside a WordPress environment, creating a faster, more dynamic user experience.',
+    url: 'https://www.theadvocates.com/attorneys/',
     image: porfolioImage6,
   },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+
 ];
 
 /**
@@ -362,27 +315,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+    description: 'Feel free to reach out to me for collaborations, questions, or just to connect. I look forward to hearing from you!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'jmnzpko@gmail.com',
+      href: 'mailto:jmnzpko@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'West Jordan, UT, USA',
+      href: 'https://maps.app.goo.gl/JuZeVQQ8He252oHC8',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'jmnzpko',
+      href: 'https://github.com/jmnzpko',
     },
   ],
 };
@@ -391,9 +339,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/jmnzpko'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
