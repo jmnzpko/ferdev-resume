@@ -3,7 +3,6 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -44,8 +43,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Fernando Jimenez - Web Developer ',
+  description: "Welcome to my personal website! I'm Fernando Jimenez, a passionate web developer specializing in creating dynamic and responsive web applications. Explore my portfolio to see my work and feel free to reach out for collaborations or inquiries.",
 };
 
 /**
@@ -69,20 +68,22 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Fernando Jimenez.`,
   description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
-    </>
+<>
+  <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+    I'm <strong className="text-stone-100">Fernando Jimenez</strong>, a passionate
+    <strong className="text-stone-100"> Web Developer</strong> focused on building clean,
+    user-friendly, and efficient web applications. This portfolio highlights the projects,
+    experiences, and skills I've developed throughout my journey in software development.
+  </p>
+  <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+    I’m constantly learning, improving, and exploring new technologies. When I'm not coding,
+    you’ll find me working on personal projects, expanding my knowledge, or discovering new ideas
+    that inspire me to grow as a developer.
+  </p>
+</>
+
   ),
   actions: [
     {
@@ -104,18 +105,34 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `
+    I’m a web developer with 10+ years of experience at The Advocates, where I specialized in building and 
+    maintaining custom WordPress solutions. Even though WordPress can be viewed as a traditional platform, 
+    I consistently pushed it forward—modernizing our workflow, implementing an MVC-style architecture, 
+    and working with tools like Sage to create cleaner, scalable structures.
+
+    My core expertise is WordPress (custom themes, plugins, ACF, performance, and UX-focused builds), 
+    but I’ve also been hands-on with modern front-end technologies. I’ve built front-end features using 
+    Vue.js and React, both for internal tools and experimental projects, because I believe in keeping my 
+    development approach current and aligned with modern standards.
+
+    The page you're viewing right now is built with React, and I continue to deepen my skills in 
+    component-driven development, modern JavaScript, and AI-assisted workflows using tools like VS Code 
+    + integrated AI to speed up iteration and prototyping.
+
+    I enjoy blending the stability of WordPress with the flexibility of modern frameworks, and I’m always 
+    exploring new technologies to improve how I build digital experiences.
+  `,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Primary Experience', text: 'WordPress (9+ years)', Icon: AcademicCapIcon },
+    { label: 'Front-End Exposure', text: 'React & Vue.js', Icon: SparklesIcon },
+    { label: 'Approach', text: 'Modernization, MVC patterns, Sage Theme', Icon: BuildingOffice2Icon },
+    { label: 'Tech Mindset', text: 'Constant learner, modern and AI-assisted development', Icon: CalendarIcon },
+    { label: 'Specialization', text: 'Custom Themes, ACF, UX & Performance', Icon: MapIcon },
   ],
 };
+
+
 
 /**
  * Skills section
@@ -127,10 +144,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'English',
         level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
       },
       {
         name: 'Spanish',
@@ -268,43 +281,56 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2010 - 2014',
+    location: 'University of North Carolina at Charlotte',
+    title: 'Bachelor of Information Technology – Software Information Systems',
+    content: (
+      <p>
+        Completed a comprehensive program focused on software development, web technologies,
+        databases, networks, and information systems. Gained strong foundational skills in
+        programming, problem-solving, and building reliable, user-centered applications.
+      </p>
+    ),
+  },
+];
+export const experience: TimelineItem[] = [
+  {
+    date: '2016 - 2025',
+    location: 'The Advocates (Personal Injury Law Firm)',
+    title: 'Web Developer',
+    content: (
+      <p>
+        Built and maintained custom WordPress sites, converting PSD designs into themes and plugins using PHP, HTML, CSS/SCSS, JavaScript, and MVC architecture. 
+        Streamlined workflows with build tools (Gulp, Node.js, NPM, Yarn). Integrated analytics (GTM, GA4, Ahrefs, SEMrush) for tracking KPIs, including visits, conversions, and cost per acquisition. 
+        Developed event tracking, data layers, and webhooks connecting websites to CRMs for accurate lead transfer. Conducted UX research and implemented improvements. Ensured sites met performance, security, and SEO best practices and produced documentation for staff content management.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2014 - 2016',
+    location: 'Premier Equestrian',
+    title: 'Web Developer / SEO Specialist',
+    content: (
+      <p>
+        Optimized horsejumps.net SEO and on-site content, boosting sales by 40% and elevating the site to first-page search rankings. 
+        Analyzed web metrics and KPIs to guide marketing strategy, configured analytics tools (Google Analytics, Google Trends, Lucky Orange, Google Ads), and improved website architecture for better UX and search visibility. 
+        Managed online marketing campaigns including paid ads, affiliate programs, email promotions, and social media initiatives.
+      </p>
+    ),
+  },
+  {
+    date: '2012 - 2013',
+    location: 'AC&M Group',
+    title: 'IT Specialist / Web Developer',
+    content: (
+      <p>
+        Designed and maintained websites using HTML, CSS, JavaScript, and CMS tools. Collaborated with management to prioritize website needs and select technical solutions. 
+        Migrated data to Rackspace cloud servers with regular backups. Diagnosed and resolved hardware, software, and network issues while ensuring data security and disaster recovery protocols.
+      </p>
+    ),
   },
 ];
 
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-];
 
 /**
  * Testimonial section
