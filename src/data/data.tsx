@@ -124,11 +124,11 @@ export const aboutData: About = {
     exploring new technologies to improve how I build digital experiences.
   `,
   aboutItems: [
-    { label: 'Primary Experience', text: 'WordPress (9+ years)', Icon: AcademicCapIcon },
-    { label: 'Front-End Exposure', text: 'React & Vue.js', Icon: SparklesIcon },
-    { label: 'Approach', text: 'Modernization, MVC patterns, Sage Theme', Icon: BuildingOffice2Icon },
-    { label: 'Tech Mindset', text: 'Constant learner, modern and AI-assisted development', Icon: CalendarIcon },
-    { label: 'Specialization', text: 'Custom Themes, ACF, UX & Performance', Icon: MapIcon },
+    {label: 'Primary Experience', text: 'WordPress (9+ years)', Icon: AcademicCapIcon},
+    {label: 'Front-End Exposure', text: 'React & Vue.js', Icon: SparklesIcon},
+    {label: 'Approach', text: 'Modernization, MVC patterns, Sage Theme', Icon: BuildingOffice2Icon},
+    {label: 'Tech Mindset', text: 'Constant learner, modern and AI-assisted development', Icon: CalendarIcon},
+    {label: 'Specialization', text: 'Custom Themes, ACF, UX & Performance', Icon: MapIcon},
   ],
 };
 
