@@ -1,10 +1,8 @@
-import {BoltIcon, ChevronUpIcon} from '@heroicons/react/24/solid';
+import {ChevronUpIcon} from '@heroicons/react/24/solid';
 import {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import Socials from '../Socials';
-
-const currentYear = new Date().getFullYear();
 
 const Footer: FC = memo(() => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
@@ -20,8 +18,15 @@ const Footer: FC = memo(() => (
         <Socials />
       </div>
 
-      <span className="text-sm text-neutral-700">Built with React Resume (MIT License)
-</span>
+      <a
+        className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
+        href="https://reactresume.com">
+        <span>
+          Provided by <span className="text-white">React</span>
+          <span className="italic text-yellow">Resume</span>
+        </span>
+      </a>
+      <span className="text-sm text-neutral-700">© Copyright Tim Baker</span>
     </div>
   </div>
 ));
