@@ -229,10 +229,10 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'The Advocates Website National Website',
-    description: 'A fully custom WordPress website built from scratch. I developed the front-end and back-end, turning designs into a fast, responsive, and SEO-optimized national homepage for the law firm.',
-    url: 'https://www.theadvocates.com',
-    image: porfolioImage1,
+    title: ' Location Page',
+    description: 'A content-heavy location page designed for strong SEO performance. I built the layout to handle large amounts of text and media while staying fully responsive and easy for the content team to update.',
+    url: 'https://www.theadvocates.com/wyoming/gillette-personal-injury-lawyer/',
+    image: porfolioImage5,
   },
   {
     title: 'The Advocates Utah Website',
@@ -253,10 +253,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage4,
   },
   {
-    title: ' Location Page',
-    description: 'A content-heavy location page designed for strong SEO performance. I built the layout to handle large amounts of text and media while staying fully responsive and easy for the content team to update.',
-    url: 'https://www.theadvocates.com/wyoming/gillette-personal-injury-lawyer/',
-    image: porfolioImage5,
+    title: 'The Advocates Website National Website',
+    description: 'A fully custom WordPress website built from scratch. I developed the front-end and back-end, turning designs into a fast, responsive, and SEO-optimized national homepage for the law firm.',
+    url: 'https://www.theadvocates.com',
+    image: porfolioImage1,
   },
   {
     title: 'Vue.js Attorney Page',
