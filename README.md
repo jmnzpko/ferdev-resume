@@ -68,11 +68,21 @@ If you’d like to reach out, collaborate, or learn more about my work, feel fre
 
 ---
 
-## 📜 License
+## 📜 License & Attribution
 
-This project is open source. You are welcome to explore the code, learn from it, or use the template as a starting point for your own portfolio.
+This project is based on the [React Resume Template](https://github.com/tbakerx/react-resume-template) by [Tim Baker](https://github.com/tbakerx), licensed under the MIT License.
+
+I've customized and adapted the template to showcase my own work, experience, and personal style.
+
+---
+
+## 🙏 Credits
+
+Original template created by **Tim Baker**  
+Repository: https://github.com/tbakerx/react-resume-template  
+License: MIT
 
 ---
 
 Thank you for visiting my portfolio!  
-If you have feedback or suggestions, I’d love to hear them.
+If you have feedback or suggestions, I'd love to hear them.
