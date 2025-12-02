@@ -243,7 +243,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Example of the backend of the Website',
     description: 'A look at the custom backend I built for our content team. I created clean, organized ACF fields and a simple UI that made it easy for non-technical writers to update pages without needing a developer.',
-    url: '#',
+    url: '/assets/images/portfolio-3.jpg',
     image: porfolioImage3,
   },
   {
