@@ -76,8 +76,8 @@ export const heroData: Hero = {
     experiences, and skills I've developed throughout my journey in software development.
   </p>
   <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-    I’m constantly learning, improving, and exploring new technologies. When I'm not coding,
-    you’ll find me working on personal projects, expanding my knowledge, or discovering new ideas
+    I'm constantly learning, improving, and exploring new technologies. When I'm not coding,
+    you'll find me working on personal projects, expanding my knowledge, or discovering new ideas
     that inspire me to grow as a developer.
   </p>
 </>
@@ -103,7 +103,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `   I’m a web developer with over 10 years of experience, specializing in WordPress and modern front-end development.
+  description: `   I'm a web developer with over 10 years of experience, specializing in WordPress and modern front-end development.
     I build custom WordPress solutions from the ground up, including fully custom PHP themes, MVC-style structures,
     and headless WordPress setups. I also have extensive experience working with the WordPress REST API (wp-json),
     ACF, and creating scalable, maintainable architectures that blend traditional CMS workflows with modern tools.
@@ -112,7 +112,7 @@ export const aboutData: About = {
     I enjoy building modern interfaces, integrating JavaScript frameworks with WordPress, and refining development
     workflows using AI-assisted tools for faster iteration and cleaner code.
 
-    I’m also highly efficient at improving performance and SEO, regularly boosting Lighthouse and Google PageSpeed
+    I'm also highly efficient at improving performance and SEO, regularly boosting Lighthouse and Google PageSpeed
     scores through clean architecture, optimization best practices, and a strong focus on accessibility and UX.
 
     My approach combines the stability of WordPress with the innovation of modern frameworks, always with the goal
@@ -269,33 +269,33 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage6,
   },
   {
-    title: ‘Mivi AI Image Generator’,
-    description: `A fun React project I built while experimenting with AI APIs and image generation. I created it to explore the capabilities of modern AI models, learn more about prompt engineering, and just enjoy building something creative. It’s a small passion project that shows how much I love working with new technology and pushing myself to learn more.`,
-    url: ‘https://ai-mivi-aoo-8lxz.vercel.app/’,
+    title: 'Mivi AI Image Generator',
+    description: `A fun React project I built while experimenting with AI APIs and image generation. I created it to explore the capabilities of modern AI models, learn more about prompt engineering, and just enjoy building something creative. It's a small passion project that shows how much I love working with new technology and pushing myself to learn more.`,
+    url: 'https://ai-mivi-aoo-8lxz.vercel.app/',
     image: porfolioImage7,
   },
   {
-    title: ‘Runion Personal Injury Lawyers – Areas We Serve’,
-    description: ‘A content-rich service area page for Runion Personal Injury Lawyers, covering Phoenix, Albuquerque, and communities across Arizona and New Mexico. Built for strong local SEO performance with city-specific sections, an FAQ accordion, practice area callouts, and a conversion-focused layout designed to drive consultations.’,
-    url: ‘https://runioninjurylaw.com/areas-we-serve’,
+    title: 'Runion Personal Injury Lawyers – Areas We Serve',
+    description: 'A content-rich service area page for Runion Personal Injury Lawyers, covering Phoenix, Albuquerque, and communities across Arizona and New Mexico. Built for strong local SEO performance with city-specific sections, an FAQ accordion, practice area callouts, and a conversion-focused layout designed to drive consultations.',
+    url: 'https://runioninjurylaw.com/areas-we-serve',
     image: porfolioImage8,
   },
   {
-    title: ‘Pacific Mind Health – Main Website’,
-    description: ‘Full website build for Pacific Mind Health, a modern psychiatry and mental health clinic serving California. The site highlights their full spectrum of services — including TMS therapy, Spravato, and Ketamine — with a clean, trust-building design that integrates Google reviews, insurance information, and online scheduling CTAs.’,
-    url: ‘https://pacificmindhealth.com/feel-better/’,
+    title: 'Pacific Mind Health – Main Website',
+    description: 'Full website build for Pacific Mind Health, a modern psychiatry and mental health clinic serving California. The site highlights their full spectrum of services — including TMS therapy, Spravato, and Ketamine — with a clean, trust-building design that integrates Google reviews, insurance information, and online scheduling CTAs.',
+    url: 'https://pacificmindhealth.com/feel-better/',
     image: porfolioImage9,
   },
   {
-    title: ‘Pacific Mind Health – ILWU Landing Page’,
-    description: `A targeted landing page built for International Longshore and Warehouse Union (ILWU) members, highlighting how Pacific Mind Health’s services are fully covered through their union benefits. The page addresses the unique mental health challenges longshoremen face and presents treatment options, insurance logos, and location maps to drive in-person bookings.`,
-    url: ‘https://pacificmindhealth.com/ilwu-mental-health/’,
+    title: 'Pacific Mind Health – ILWU Landing Page',
+    description: `A targeted landing page built for International Longshore and Warehouse Union (ILWU) members, highlighting how Pacific Mind Health's services are fully covered through their union benefits. The page addresses the unique mental health challenges longshoremen face and presents treatment options, insurance logos, and location maps to drive in-person bookings.`,
+    url: 'https://pacificmindhealth.com/ilwu-mental-health/',
     image: porfolioImage10,
   },
   {
-    title: ‘Pacific Mind Health – Veterans & Military Page’,
-    description: ‘A dedicated landing page for Veterans and Military Service Members, positioning Pacific Mind Health as a VA Community Care Network (CCN) provider. The page covers PTSD/Trauma treatment, TriWest and TRICARE authorization workflows, veteran-specific mental health conditions, and a trauma-informed care philosophy designed to build trust with this audience.’,
-    url: ‘https://pacificmindhealth.com/veterans/’,
+    title: 'Pacific Mind Health – Veterans & Military Page',
+    description: 'A dedicated landing page for Veterans and Military Service Members, positioning Pacific Mind Health as a VA Community Care Network (CCN) provider. The page covers PTSD/Trauma treatment, TriWest and TRICARE authorization workflows, veteran-specific mental health conditions, and a trauma-informed care philosophy designed to build trust with this audience.',
+    url: 'https://pacificmindhealth.com/veterans/',
     image: porfolioImage11,
   },
 ];
