@@ -23,7 +23,13 @@ const Portfolio: FC = memo(() => {
                   className={classNames(
                     'relative h-44 w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} className="h-full w-full object-cover object-top" placeholder="blur" src={image} />
+                  {image ? (
+                    <Image alt={title} className="h-full w-full object-cover object-top" placeholder="blur" src={image} />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-slate-800">
+                      <span className="px-4 text-center text-sm font-semibold text-slate-300">{title}</span>
+                    </div>
+                  )}
                   <ItemOverlay item={item} />
                 </div>
               </div>

@@ -3,25 +3,18 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
+  CodeBracketIcon,
   MapIcon,
   SparklesIcon,
+  WrenchScrewdriverIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-/* eslint-disable object-curly-spacing */
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/areas-we-serve.png';
 import porfolioImage9 from '../images/portfolio/General Ad.png';
-import porfolioImage10 from '../images/portfolio/ilwu.png';
-import porfolioImage11 from '../images/portfolio/veterans.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -41,8 +34,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Fernando Jimenez - Web Developer ',
-  description: "Welcome to my personal website! I'm Fernando Jimenez, a passionate web developer specializing in creating dynamic and responsive web applications. Explore my portfolio to see my work and feel free to reach out for collaborations or inquiries.",
+  title: 'Fernando Jimenez — Web Developer & Technical SEO Strategist',
+  description:
+    'Web developer and technical SEO strategist with 10+ years building high-performance WordPress sites, front-end applications, and technical SEO systems for legal and healthcare markets.',
 };
 
 /**
@@ -68,20 +62,19 @@ export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I'm Fernando Jimenez.`,
   description: (
-<>
-  <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-    I'm <strong className="text-stone-100">Fernando Jimenez</strong>, a passionate
-    <strong className="text-stone-100"> Web Developer</strong> focused on building clean,
-    user-friendly, and efficient web applications. This portfolio highlights the projects,
-    experiences, and skills I've developed throughout my journey in software development.
-  </p>
-  <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-    I'm constantly learning, improving, and exploring new technologies. When I'm not coding,
-    you'll find me working on personal projects, expanding my knowledge, or discovering new ideas
-    that inspire me to grow as a developer.
-  </p>
-</>
-
+    <>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        <strong className="text-stone-100">Web developer</strong> and{' '}
+        <strong className="text-stone-100">technical SEO strategist</strong> with 10+ years of experience building
+        high-performance WordPress sites, modern front-end applications, and organic growth systems for legal and
+        healthcare markets.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I combine deep development skills with hands-on SEO implementation, analytics engineering, and{' '}
+        <strong className="text-stone-100">AI-assisted workflows</strong> — building sites that are fast, maintainable,
+        and built to rank.
+      </p>
+    </>
   ),
   actions: [
     {
@@ -103,299 +96,294 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `   I'm a web developer with over 10 years of experience, specializing in WordPress and modern front-end development.
-    I build custom WordPress solutions from the ground up, including fully custom PHP themes, MVC-style structures,
-    and headless WordPress setups. I also have extensive experience working with the WordPress REST API (wp-json),
-    ACF, and creating scalable, maintainable architectures that blend traditional CMS workflows with modern tools.
-
-    Alongside my WordPress expertise, I work with React, Next.js, GitHub, npm, yarn, and component-driven development.
-    I enjoy building modern interfaces, integrating JavaScript frameworks with WordPress, and refining development
-    workflows using AI-assisted tools for faster iteration and cleaner code.
-
-    I'm also highly efficient at improving performance and SEO, regularly boosting Lighthouse and Google PageSpeed
-    scores through clean architecture, optimization best practices, and a strong focus on accessibility and UX.
-
-    My approach combines the stability of WordPress with the innovation of modern frameworks, always with the goal
-    of creating fast, user-focused digital experiences.
-  `,
-aboutItems: [
-  {
-    label: 'Primary Experience',
-    text: 'Web Development & Front-End Engineering (10+ years)',
-    Icon: AcademicCapIcon
-  },
-  {
-    label: 'Front-End Skills',
-    text: 'React, Next.js, Modern UI Components, JavaScript/TypeScript',
-    Icon: SparklesIcon
-  },
-  {
-    label: 'Architecture',
-    text: 'Custom Builds, MVC Patterns, API-Driven & Headless Architectures',
-    Icon: BuildingOffice2Icon
-  },
-  {
-    label: 'APIs & Data',
-    text: 'REST, JSON, JSON-LD (SEO), Webhooks, Data Modeling',
-    Icon: MapIcon
-  },
-  {
-    label: 'AI & Integrations',
-    text: 'AI APIs, HuggingFace Models, Automation & AI-assisted Workflows',
-    Icon: SparklesIcon
-  },
-  {
-    label: 'User Testing',
-    text: 'Usability Reviews, UX Feedback Loops, User-Centered Improvements',
-    Icon: CalendarIcon
-  },
-  {
-    label: 'Performance & SEO',
-    text: 'Technical SEO, Schema Markup (JSON-LD), Core Web Vitals, Lighthouse Optimization',
-    Icon: CalendarIcon
-  },
-  {
-    label: 'Workflow & Tools',
-    text: 'GitHub, Vite, Vercel, npm/yarn, CI/CD, Modern Dev Tooling',
-    Icon: CalendarIcon
-  },
-  {
-    label: 'Deployment & Hosting',
-    text: 'Vercel, Netlify, Cloud Hosting, Build Optimization',
-    Icon: BuildingOffice2Icon
-  }
-]
-
-
+  description: `Web developer and technical SEO strategist with 10+ years of experience building high-performance WordPress sites, architecting technical SEO systems, and driving organic growth for competitive legal and healthcare markets. I combine deep front-end development skills with hands-on SEO implementation, analytics engineering, and AI-assisted workflows to build faster, rank better, and deliver measurable business outcomes. Currently applying AI tools including Claude, ChatGPT, and Gemini as a core part of my daily development and strategy work.`,
+  aboutItems: [
+    {
+      label: 'Primary Expertise',
+      text: 'WordPress development, front-end engineering, technical SEO (10+ years)',
+      Icon: CodeBracketIcon,
+    },
+    {
+      label: 'Front-End Stack',
+      text: 'React, Next.js, Vue.js, React Native, JavaScript, SCSS, Tailwind CSS',
+      Icon: SparklesIcon,
+    },
+    {
+      label: 'WordPress & PHP',
+      text: 'Custom themes, ACF Pro, TailPress, MVC architecture, headless/REST API',
+      Icon: WrenchScrewdriverIcon,
+    },
+    {
+      label: 'Technical SEO',
+      text: 'Core Web Vitals, schema/structured data, local SEO, law firm SEO, E-E-A-T',
+      Icon: MapIcon,
+    },
+    {
+      label: 'Analytics Engineering',
+      text: 'GA4, GTM, data layers, conversion tracking, KPI dashboards, CallRail',
+      Icon: CalendarIcon,
+    },
+    {
+      label: 'AI Workflows',
+      text: 'Claude, ChatGPT, Gemini — daily use for coding, debugging, SEO strategy, and prototyping',
+      Icon: SparklesIcon,
+    },
+    {
+      label: 'Deployment & DevOps',
+      text: 'Git, GitHub, Vercel, WP Engine, Cloudflare',
+      Icon: BuildingOffice2Icon,
+    },
+    {
+      label: 'Markets Served',
+      text: 'Personal injury law firms, multi-location healthcare, e-commerce',
+      Icon: AcademicCapIcon,
+    },
+  ],
 };
-
-
 
 /**
  * Skills section
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Backend & Build Tools',
+    name: 'Development',
     skills: [
-      { name: 'PHP', level: 10 },
-      { name: 'Advanced Custom Fields (ACF)', level: 10 },
-      { name: 'Node.js / NPM / Yarn', level: 10 },
-      { name: 'Gulp', level: 10 },
-      { name: 'MVC Architecture', level: 10},
-      { name: 'Git', level: 10},
+      {name: 'WordPress & PHP', level: 10},
+      {name: 'React / Next.js', level: 9},
+      {name: 'Vue.js', level: 9},
+      {name: 'React Native / Expo', level: 8},
+      {name: 'JavaScript / TypeScript', level: 10},
+      {name: 'SCSS / Tailwind CSS', level: 10},
+      {name: 'ACF Pro / TailPress', level: 10},
+      {name: 'Git / GitHub / Vercel / WP Engine', level: 10},
     ],
   },
   {
-    name: 'SEO & Analytics',
+    name: 'Technical SEO',
     skills: [
-      { name: 'SEO (Technical & On-Page)', level: 10 },
-      { name: 'Google Tag Manager (GTM)', level: 10 },
-      { name: 'Google Analytics 4 (GA4)', level: 10 },
-      { name: 'Ahrefs / SEMrush', level: 10 },
-      { name: 'Data Layer / Event Tracking', level: 9 },
-      { name: 'Lucky Orange / Heatmaps', level: 10 },
+      {name: 'Technical SEO Audits', level: 10},
+      {name: 'Core Web Vitals', level: 10},
+      {name: 'Local & Multi-Location SEO', level: 10},
+      {name: 'Schema / Structured Data', level: 10},
+      {name: 'Law Firm SEO & E-E-A-T', level: 10},
+      {name: 'Crawlability & Redirect Strategy', level: 10},
     ],
   },
   {
-    name: 'Frontend Development',
+    name: 'Analytics',
     skills: [
-      { name: 'WordPress (Custom themes & plugins)', level: 10 },
-      { name: 'HTML5 / CSS3 / SCSS', level: 10 },
-      { name: 'JavaScript (ES6+)', level: 10 },
-      { name: 'React.js', level: 9 },
-      { name: 'Vue.js', level: 9 },
-      { name: 'Bootstrap', level: 10 },
-      { name: 'jQuery', level: 9 },
-      { name: 'Responsive / UX Design', level: 10 },
+      {name: 'GA4', level: 10},
+      {name: 'Google Tag Manager', level: 10},
+      {name: 'Data Layers & Event Tracking', level: 10},
+      {name: 'Conversion Tracking & KPI Dashboards', level: 10},
+      {name: 'Google Search Console', level: 10},
+      {name: 'CallRail / AgencyAnalytics', level: 8},
     ],
   },
   {
-    name: 'Spoken Languages',
+    name: 'SEO Tools',
     skills: [
-      { name: 'English', level: 10 },
-      { name: 'Spanish', level: 10 },
+      {name: 'SEMrush', level: 10},
+      {name: 'Ahrefs', level: 10},
+      {name: 'Screaming Frog', level: 9},
+      {name: 'Majestic SEO', level: 8},
+      {name: 'PageSpeed Insights / GTmetrix', level: 10},
+      {name: 'Lighthouse', level: 10},
     ],
   },
   {
-    name: 'Other Development Skills',
+    name: 'AI Workflow',
     skills: [
-      { name: 'CRMs / Webhooks / API Integrations', level: 8 },
-      { name: 'Cloud Servers (Rackspace)', level: 6 },
-      { name: 'Network & IT Troubleshooting', level: 6 },
+      {name: 'Claude', level: 10},
+      {name: 'ChatGPT', level: 10},
+      {name: 'Gemini', level: 9},
+      {name: 'AI-Assisted Coding & Debugging', level: 10},
+      {name: 'Rapid Prototyping with AI', level: 10},
+      {name: 'AI-Driven SEO Strategy', level: 9},
     ],
   },
 ];
-
 
 /**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: ' Location Page',
-    description: 'A content-heavy location page designed for strong SEO performance. I built the layout to handle large amounts of text and media while staying fully responsive and easy for the content team to update.',
-    url: 'https://www.theadvocates.com/wyoming/gillette-personal-injury-lawyer/',
-    image: porfolioImage5,
+    title: 'Pacific Mind Health — WordPress Rebuild',
+    description:
+      'Full front-end rebuild of a healthcare WordPress site. Migrating from a heavy Elementor setup to a clean custom architecture using TailPress, ACF Pro, and flexible content modules — with full SEO preservation throughout.',
+    url: 'https://pacificmindhealth.com',
+    image: porfolioImage9,
+    tags: ['WordPress', 'ACF Pro', 'TailPress', 'PHP', 'WP Engine', 'SEO Preservation'],
   },
   {
-    title: 'The Advocates Utah Website',
-    description: 'This site uses the same core template as the national site, but with many custom components and dynamic features. Each page type uses unique code, which allowed me to experiment with new technologies and improve performance and flexibility.',
-    url: 'https://www.utahadvocates.com',
-    image: porfolioImage2,
+    title: 'WEBRIS — Law Firm SEO Strategy',
+    description:
+      'SEO Strategist for personal injury law firms through WEBRIS. Technical audits, multi-location strategy, E-E-A-T content, LegalService schema, and local SEO for competitive markets in Phoenix, Albuquerque, and Minnesota.',
+    url: 'https://runioninjurylaw.com/areas-we-serve/',
+    image: porfolioImage8,
+    tags: ['Technical SEO', 'Local SEO', 'Law Firm SEO', 'LegalService Schema', 'E-E-A-T'],
   },
   {
-    title: 'Example of the backend of the Website',
-    description: 'A look at the custom backend I built for our content team. I created clean, organized ACF fields and a simple UI that made it easy for non-technical writers to update pages without needing a developer.',
-    url: '/assets/images/portfolio-3.png',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Express Records',
-    description: 'A custom WordPress website built for a company that manages medical records and bills. I developed the layout, handled all integrations, and optimized the site for speed and user experience.',
-    url: 'https://www.expressrr.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'The Advocates Website National Website',
-    description: 'A fully custom WordPress website built from scratch. I developed the front-end and back-end, turning designs into a fast, responsive, and SEO-optimized national homepage for the law firm.',
+    title: 'The Advocates — Multi-Site WordPress Platform',
+    description:
+      'Built and maintained a custom WordPress platform across 20+ personal injury law firm websites over 9 years. Custom PHP themes, MVC architecture, Vue.js and React integrations, webhook/CRM pipelines, and advanced GA4/GTM analytics.',
     url: 'https://www.theadvocates.com',
     image: porfolioImage1,
+    tags: ['WordPress', 'PHP', 'Vue.js', 'React', 'Webhooks', 'GA4', 'GTM'],
   },
   {
-    title: 'Vue.js Attorney Page',
-    description: 'A hybrid Vue.js and WordPress page that pulls attorney data through the WP JSON API. This project let me experiment with Vue inside a WordPress environment, creating a faster, more dynamic user experience.',
-    url: 'https://www.theadvocates.com/attorneys/',
-    image: porfolioImage6,
+    title: 'Educational Learning App — React Native / Expo',
+    description:
+      'Mobile app prototype to help children practice spelling and reading through interactive word exercises, progress-based feedback, and gamified learning. Built with AI-assisted workflows for rapid prototyping and iteration.',
+    url: '#',
+    tags: ['React Native', 'Expo', 'AI-Assisted Development', 'Mobile', 'Education'],
   },
   {
-    title: 'Mivi AI Image Generator',
-    description: `A fun React project I built while experimenting with AI APIs and image generation. I created it to explore the capabilities of modern AI models, learn more about prompt engineering, and just enjoy building something creative. It's a small passion project that shows how much I love working with new technology and pushing myself to learn more.`,
-    url: 'https://ai-mivi-aoo-8lxz.vercel.app/',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Runion Personal Injury Lawyers – Areas We Serve',
-    description: 'A content-rich service area page for Runion Personal Injury Lawyers, covering Phoenix, Albuquerque, and communities across Arizona and New Mexico. Built for strong local SEO performance with city-specific sections, an FAQ accordion, practice area callouts, and a conversion-focused layout designed to drive consultations.',
-    url: 'https://runioninjurylaw.com/areas-we-serve',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Pacific Mind Health – Main Website',
-    description: 'Full website build for Pacific Mind Health, a modern psychiatry and mental health clinic serving California. The site highlights their full spectrum of services — including TMS therapy, Spravato, and Ketamine — with a clean, trust-building design that integrates Google reviews, insurance information, and online scheduling CTAs.',
-    url: 'https://pacificmindhealth.com/feel-better/',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Pacific Mind Health – ILWU Landing Page',
-    description: `A targeted landing page built for International Longshore and Warehouse Union (ILWU) members, highlighting how Pacific Mind Health's services are fully covered through their union benefits. The page addresses the unique mental health challenges longshoremen face and presents treatment options, insurance logos, and location maps to drive in-person bookings.`,
-    url: 'https://pacificmindhealth.com/ilwu-mental-health/',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Pacific Mind Health – Veterans & Military Page',
-    description: 'A dedicated landing page for Veterans and Military Service Members, positioning Pacific Mind Health as a VA Community Care Network (CCN) provider. The page covers PTSD/Trauma treatment, TriWest and TRICARE authorization workflows, veteran-specific mental health conditions, and a trauma-informed care philosophy designed to build trust with this audience.',
-    url: 'https://pacificmindhealth.com/veterans/',
-    image: porfolioImage11,
+    title: 'AI-Integrated SEO Tooling',
+    description:
+      'Custom AI-assisted workflows integrating Claude, ChatGPT, and Gemini into technical SEO auditing, content strategy, structured data QA, and client reporting. Combines AI output with manual validation for improved quality and delivery speed.',
+    url: '#',
+    tags: ['Claude', 'ChatGPT', 'Gemini', 'AI Workflow', 'SEO Automation', 'Technical SEO'],
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
-
 export const experience: TimelineItem[] = [
   {
-    date: '2016 - 2025',
-    location: 'The Advocates (Personal Injury Law Firm)',
-    title: 'Full-Stack Web Developer & Web Manager',
+    date: 'January 2026 – Present',
+    location: 'FJ Digital Solutions LLC',
+    title: 'Web Developer / SEO Strategist / AI Workflow Consultant',
     content: (
       <div className="text-black max-w-none">
+        <p className="mb-4 text-sm text-gray-600">Independent contractor serving legal and healthcare clients.</p>
 
-        {/* Development Skills */}
-        <h4 className="text-lg font-semibold mb-2 text-black">Development Skills</h4>
-        <ul className="list-disc list-outside pl-6 space-y-3 text-black">
+        <h4 className="text-base font-semibold mb-2 text-black">WEBRIS (SEO Agency) — SEO Strategist</h4>
+        <ul className="list-disc list-outside pl-6 space-y-2 text-black mb-4">
           <li>
-            Built custom WordPress sites using PHP, MVC architecture, and modern tooling
-            (Node.js, NPM, Yarn, Gulp). Created custom themes, plugins, and reusable components.
+            SEO Strategist for personal injury law firm clients: Runion Injury Law (Phoenix/Albuquerque) and Milavetz
+            Law P.A. (Minnesota).
           </li>
           <li>
-            Integrated modern JavaScript frameworks—including Vue.js and React—
-            such as a Vue-based internal attorney directory application.
+            Technical SEO audits, Google Search Console analysis, keyword tracking, competitor research, and backlink
+            gap analysis.
           </li>
           <li>
-            Optimized front-end performance using SCSS, Tailwind CSS, and Bootstrap,
-            consistently achieving high Google PageSpeed Insights and Lighthouse scores.
+            Multi-location SEO strategy across personal injury, car accident, truck accident, and motorcycle accident
+            practice areas.
           </li>
           <li>
-            Developed fully customized WordPress backends to streamline workflows for content writers
-            and improve editorial processes.
+            Tracked ranking improvement from approximately position 38 to position 16 for a high-competition Phoenix
+            personal injury keyword.
           </li>
           <li>
-            Diagnosed and resolved complex site issues, modernized legacy systems,
-            improved security, and established long-term coding standards.
+            E-E-A-T content strategy, LegalService schema implementation, GBP optimization, and local authority
+            building.
           </li>
           <li>
-            Experienced with hosting/server management including WP Engine, Rackspace,
-            and configuring CDNs such as Cloudflare for caching, security, and performance.
+            Google review acquisition workflows: office-specific QR codes, review hub UX, and 301 redirect tracking
+            links.
+          </li>
+          <li>
+            Tools: SEMrush, Ahrefs, Screaming Frog, Majestic SEO, GSC, GA4, AgencyAnalytics, CallRail, ClickUp,
+            Claude, ChatGPT, Gemini.
           </li>
         </ul>
 
-        {/* Divider */}
-        <div className="my-6 border-b border-gray-300"></div>
+        <div className="my-4 border-b border-gray-200"></div>
 
-        {/* SEO & Analytics Skills */}
-        <h4 className="text-lg font-semibold mb-2 text-black">SEO & Analytics Skills</h4>
-        <ul className="list-disc list-outside pl-6 space-y-3 text-black">
+        <h4 className="text-base font-semibold mb-2 text-black">Pacific Mind Health — Front-End WordPress Developer</h4>
+        <ul className="list-disc list-outside pl-6 space-y-2 text-black">
           <li>
-            Improved Google PageSpeed Insights scores for both mobile and desktop through
-            performance optimization, asset restructuring, and code refactoring.
+            Rebuilding a healthcare WordPress site from a heavy Elementor setup to a clean custom architecture using
+            TailPress, ACF Pro, custom post types, flexible content modules, and Gutenberg-compatible components.
           </li>
           <li>
-            Skilled in diagnosing speed bottlenecks using Lighthouse, GTmetrix, Core Web Vitals,
-            and server-level profiling tools.
+            Full SEO preservation throughout the migration: URL structure, H1/H2 hierarchy, metadata, internal links,
+            and form placements.
           </li>
-          <li>
-            Performed deep SEO audits using Ahrefs and SEMrush, analyzing keyword gaps,
-            backlink profiles, site structure, content opportunities, and technical issues.
-          </li>
-          <li>
-            Engineered advanced analytics setups: custom GTM containers, GA4 events,
-            KPI dashboards, and detailed data layer implementations.
-          </li>
-          <li>
-            Developed automated webhook pipelines integrating websites with CRMs 
-            for accurate lead tracking and reporting.
-          </li>
-          <li>
-            Performed technical SEO audits, UX research, and data analysis to improve 
-            rankings, conversions, and user experience.
-          </li>
-          <li>
-            Created custom performance and behavioral KPIs for stakeholders, enabling 
-            deeper insights into user journeys and marketing effectiveness.
-          </li>
+          <li>Deployment via GitHub and WP Engine. Stakeholder communication via Loom walkthroughs.</li>
         </ul>
-
       </div>
     ),
   },
+  {
+    date: '2016 – 2025',
+    location: 'The Advocates — Personal Injury Law Firm',
+    title: 'Web Developer & SEO Specialist',
+    content: (
+      <div className="text-black max-w-none">
+        <h4 className="text-base font-semibold mb-2 text-black">Development</h4>
+        <ul className="list-disc list-outside pl-6 space-y-2 text-black mb-4">
+          <li>
+            Built and maintained custom WordPress platform across 20+ law firm websites using PHP, MVC architecture, and
+            modern tooling (Node.js, NPM, Yarn, Gulp).
+          </li>
+          <li>
+            Integrated Vue.js and React into WordPress environments, including a Vue-based internal attorney directory
+            application.
+          </li>
+          <li>
+            Developed webhook/JSON CRM integrations for lead attribution and built advanced GA4 setups with custom GTM
+            containers and data layer implementations.
+          </li>
+          <li>
+            Core Web Vitals and PageSpeed optimization using Lighthouse and GTmetrix. Hosting across WP Engine,
+            Rackspace, and Cloudflare CDN.
+          </li>
+        </ul>
+
+        <div className="my-4 border-b border-gray-200"></div>
+
+        <h4 className="text-base font-semibold mb-2 text-black">SEO & Analytics</h4>
+        <ul className="list-disc list-outside pl-6 space-y-2 text-black">
+          <li>Technical SEO audits using Ahrefs and SEMrush: keyword gaps, backlink profiles, site structure analysis.</li>
+          <li>Engineered advanced analytics: custom GTM containers, GA4 events, KPI dashboards, data layer implementations.</li>
+          <li>Automated webhook pipelines integrating websites with CRMs for accurate lead tracking and attribution.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    date: '2014 – 2016',
+    location: 'Premier Equestrian',
+    title: 'Web Developer & SEO Specialist',
+    content: (
+      <ul className="list-disc list-outside pl-6 space-y-2 text-black">
+        <li>
+          Drove a 40% increase in horse-jump product sales through SEO and content improvements.
+        </li>
+        <li>Moved horsejumps.net from page 4 to page 1 on Google for core product keywords.</li>
+      </ul>
+    ),
+  },
+  {
+    date: '2012 – 2013',
+    location: 'AC&M Group',
+    title: 'IT Specialist & Web Developer',
+    content: (
+      <ul className="list-disc list-outside pl-6 space-y-2 text-black">
+        <li>Website development, server migration to Rackspace cloud, and IT infrastructure management.</li>
+      </ul>
+    ),
+  },
 ];
+
 export const education: TimelineItem[] = [
   {
-    date: '2010 - 2014',
+    date: '2010 – 2014',
     location: 'University of North Carolina at Charlotte',
-    title: 'Bachelor of Information Technology – Software Information Systems',
+    title: 'Bachelor of Information Technology — Software Information Systems',
     content: (
       <p>
-        Completed a comprehensive program focused on software development, web technologies,
-        databases, networks, and information systems. Gained strong foundational skills in
-        programming, problem-solving, and building reliable, user-centered applications.
+        Comprehensive program focused on software development, web technologies, databases, networks, and information
+        systems. Strong foundational skills in programming, problem-solving, and building user-centered applications.
       </p>
     ),
   },
 ];
-
 
 /**
  * Testimonial section
@@ -424,10 +412,10 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-    description: 'Feel free to reach out to me for collaborations, questions, or just to connect. I look forward to hearing from you!',
+  description:
+    'Available for web development, WordPress builds, technical SEO projects, and AI workflow consulting. Reach out and I will get back to you promptly.',
   items: [
     {
       type: ContactType.Email,
@@ -435,13 +423,23 @@ export const contact: ContactSection = {
       href: 'mailto:jmnzpko@gmail.com',
     },
     {
+      type: ContactType.Phone,
+      text: '801-425-0487',
+      href: 'tel:+18014250487',
+    },
+    {
       type: ContactType.Location,
       text: 'West Jordan, UT, USA',
       href: 'https://maps.app.goo.gl/JuZeVQQ8He252oHC8',
     },
     {
+      type: ContactType.LinkedIn,
+      text: 'linkedin.com/in/fernando-jimenez-76895b47',
+      href: 'https://www.linkedin.com/in/fernando-jimenez-76895b47/',
+    },
+    {
       type: ContactType.Github,
-      text: 'jmnzpko',
+      text: 'github.com/jmnzpko',
       href: 'https://github.com/jmnzpko',
     },
   ],
@@ -452,5 +450,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/jmnzpko'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/fernando-jimenez-76895b47/'},
 ];
