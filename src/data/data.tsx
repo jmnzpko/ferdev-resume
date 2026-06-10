@@ -338,10 +338,7 @@ export const experience: TimelineItem[] = [
             Multi-location SEO strategy across personal injury, car accident, truck accident, and motorcycle accident
             practice areas.
           </li>
-          <li>
-            Tracked ranking improvement from approximately position 38 to position 16 for a high-competition Phoenix
-            personal injury keyword.
-          </li>
+          <li>Improved keyword positions overall across competitive personal injury markets.</li>
           <li>
             E-E-A-T content strategy, LegalService schema implementation, GBP optimization, and local authority
             building.
