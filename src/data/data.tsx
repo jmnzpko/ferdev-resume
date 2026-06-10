@@ -13,8 +13,16 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/areas-we-serve.png';
 import porfolioImage9 from '../images/portfolio/General Ad.png';
+import porfolioImage10 from '../images/portfolio/ilwu.png';
+import porfolioImage11 from '../images/portfolio/veterans.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -231,6 +239,62 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://www.theadvocates.com',
     image: porfolioImage1,
     tags: ['WordPress', 'PHP', 'Vue.js', 'React', 'Webhooks', 'GA4', 'GTM'],
+  },
+  {
+    title: 'The Advocates — Utah Website',
+    description:
+      'Same core template as the national site but with many custom components and dynamic features. Each page type uses unique code, allowing experimentation with new technologies and improving performance and flexibility.',
+    url: 'https://www.utahadvocates.com',
+    image: porfolioImage2,
+  },
+  {
+    title: 'Custom WordPress Backend',
+    description:
+      'A look at the custom backend built for a content team. Clean, organized ACF fields and a simple UI that made it easy for non-technical writers to update pages without needing a developer.',
+    url: '/assets/images/portfolio-3.png',
+    image: porfolioImage3,
+  },
+  {
+    title: 'Express Records',
+    description:
+      'Custom WordPress website for a medical records and billing company. Developed the layout, handled all integrations, and optimized for speed and user experience.',
+    url: 'https://www.expressrr.com',
+    image: porfolioImage4,
+  },
+  {
+    title: 'The Advocates — Location Page',
+    description:
+      'Content-heavy location page designed for strong SEO performance. Built to handle large amounts of text and media while staying fully responsive and easy for the content team to update.',
+    url: 'https://www.theadvocates.com/wyoming/gillette-personal-injury-lawyer/',
+    image: porfolioImage5,
+  },
+  {
+    title: 'Vue.js Attorney Directory',
+    description:
+      'Hybrid Vue.js and WordPress page that pulls attorney data through the WP JSON API. Faster, more dynamic user experience by running Vue inside a WordPress environment.',
+    url: 'https://www.theadvocates.com/attorneys/',
+    image: porfolioImage6,
+  },
+  {
+    title: 'Mivi — AI Image Generator',
+    description:
+      'React project built to explore AI image generation APIs and prompt engineering. A small passion project experimenting with modern AI models and creative tooling.',
+    url: 'https://ai-mivi-aoo-8lxz.vercel.app/',
+    image: porfolioImage7,
+  },
+  {
+    title: 'Pacific Mind Health — ILWU Landing Page',
+    description:
+      'Targeted landing page for ILWU union members, highlighting how Pacific Mind Health services are fully covered through union benefits. Addresses unique mental health challenges longshoremen face and drives in-person bookings.',
+    url: 'https://pacificmindhealth.com/ilwu-mental-health/',
+    image: porfolioImage10,
+  },
+  {
+    title: 'Pacific Mind Health — Veterans & Military',
+    description:
+      'Dedicated landing page for Veterans and Military Service Members, positioning Pacific Mind Health as a VA Community Care Network provider. Covers PTSD/Trauma treatment, TriWest and TRICARE authorization, and veteran-specific care.',
+    url: 'https://pacificmindhealth.com/veterans/',
+    image: porfolioImage11,
   },
   {
     title: 'Educational Learning App — React Native / Expo',
